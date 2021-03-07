@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Montserrat:wght@500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fredoka One', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    background: linear-gradient(45deg, rgba(32,29,85,1) 0%, rgba(102,15,139,1) 100%); 
+}
+
+header {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding: 15px;
+}
+
+.score {
+    border-radius: 8px;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+#score-display {
+    border: 2px solid white;
+    padding: 8px 12px;
+    margin: 0px 10px;
+    display: inline-block;
+    width: 80px;
+    border-radius: 8px;
+    color: white;
+}
+
+.score-identifier {
+    color:rgb(47, 255, 175);
+    font-size: 18px;
+    font-family: Montserrat;
+}
+
+.result > p{
+    color: rgba(255, 255, 255,0.8);
+    font-size: 30px;
+    padding-bottom: 20px;
+    font-family: Montserrat;
+}
+
+.selections {
+    display: inline-flex;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 100px;
+    grid-template-rows: 100px;
+    grid-template-areas: "text";
+    padding: 10px;
+    margin: 20px;
+
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 20px;
+    background: rgb(255, 255, 255);
+    box-shadow: 0px 0px 20px rgba(0,0,0,1);
+    text-align: center;
+    align-items: center;
+
+    transition: 0.25s ease;
+    cursor: pointer;
+}
+
+.card-text {
+    grid-area: text;
+    color: #222;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5);
+}
